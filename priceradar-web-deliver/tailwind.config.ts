@@ -1,0 +1,80 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: ["./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        bg0: "#020402",
+        bg1: "#050805",
+        bg2: "#080C08",
+        bg3: "#0A100A",
+        bg4: "#0D140D",
+        surface: "#0B100B",
+        surfaceHover: "#101A10",
+        surfaceActive: "#142214",
+        surfaceRaised: "#0E140E",
+        borderFaint: "#0F140F",
+        borderSubtle: "#152015",
+        borderMid: "#1E2D1E",
+        borderStrong: "#2A3F2A",
+        textPrimary: "#EDEFED",
+        textSecondary: "#A8B5A8",
+        textTertiary: "#6B7A6B",
+        textQuat: "#46524A",
+        textDisabled: "#2E382E",
+        accent: "#39FF14",
+        accentBright: "#7BFF5C",
+        accentHover: "#56FF38",
+        accentPressed: "#2AE008",
+        accentDim: "#1F7A10",
+        accentFaint: "#0F2E0F",
+        accentGhost: "#082008",
+        success: "#39FF14",
+        warn: "#FFB800",
+        danger: "#FF3366",
+        info: "#3A9BFF",
+        brandML: "#FFE600",
+        brandKabum: "#FF6500",
+        brandMagalu: "#0086FF",
+        brandAmazon: "#FF9900",
+        brandPichau: "#E22C2C",
+        brandTerabyte: "#A4D000",
+      },
+      fontFamily: {
+        display: ["var(--font-display)", "Orbitron", "sans-serif"],
+        ui: ["var(--font-ui)", "Rajdhani", "sans-serif"],
+        mono: ["var(--font-mono)", "JetBrains Mono", "monospace"],
+      },
+      keyframes: {
+        reveal: {
+          "0%": { opacity: "0", transform: "translateY(14px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-400px 0" },
+          "100%": { backgroundPosition: "400px 0" },
+        },
+        radarSpin: { "100%": { transform: "rotate(360deg)" } },
+        pulseRing: {
+          "0%": { boxShadow: "0 0 0 0 rgba(57,255,20,0.5)" },
+          "70%": { boxShadow: "0 0 0 10px rgba(57,255,20,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(57,255,20,0)" },
+        },
+        toastIn: {
+          "0%": { opacity: "0", transform: "translateY(-12px) scale(.96)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
+        },
+      },
+      animation: {
+        reveal: "reveal .42s cubic-bezier(.16,1,.3,1) both",
+        shimmer: "shimmer 1.4s linear infinite",
+        radarSpin: "radarSpin 4s linear infinite",
+        pulseRing: "pulseRing 1.8s cubic-bezier(.66,0,0,1) infinite",
+        toastIn: "toastIn .34s cubic-bezier(.16,1,.3,1) both",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
