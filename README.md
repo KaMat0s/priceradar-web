@@ -7,10 +7,6 @@
    ╲╱  INTELLIGENCE LAYER · BY VYNTRIX
 ```
 
-Esta é a **reconstrução web** do projeto desktop original (Python/PySide6). A lógica de scraping, as heurísticas de IA, o conceito do produto e a identidade visual (design system Vyntrix neon) foram **preservados e portados** para uma stack web moderna que atende a todos os requisitos do desafio final.
-
----
-
 ## ▸ Stack
 
 | Camada | Tecnologia |
